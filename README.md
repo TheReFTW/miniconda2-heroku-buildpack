@@ -3,6 +3,8 @@ Conda Buildpack
 
 This is a copy and update of the [Heroku Buildpack](https://devcenter.heroku.com/articles/buildpacks) for [Conda](http://conda.pydata.org/), the Python distribution for scientific computing by Continuum Analytics.
 
+Updated for Miniconda2.
+
 -----------------------
 
 **Note:** Heroku now recommends using their beta Docker support to achieve [similar results](https://github.com/heroku-examples/python-miniconda). 
