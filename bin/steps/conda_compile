@@ -1,11 +1,10 @@
 if [ ! -d /app/.heroku/miniconda ]; then
-    puts-step "Preparing Python/Miniconda Environment"
+    puts-step "Preparing Python/Miniconda2 Environment"
     curl -Os https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
     bash Miniconda2-latest-Linux-x86_64.sh  -p /app/.heroku/miniconda/ -b | indent
     rm -fr Miniconda2-latest-Linux-x86_64.sh
 
     conda install pip --yes | indent
-    conda install python --yes | indent
 fi
 
 echo "nomkl" > $HOME/.heroku/miniconda/conda-meta/pinned
