@@ -5,6 +5,7 @@ if [ ! -d /app/.heroku/miniconda ]; then
     rm -fr Miniconda2-latest-Linux-x86_64.sh
 
     conda install pip --yes | indent
+    conda install python=3.6 --yes | indent
 fi
 
 echo "nomkl" > $HOME/.heroku/miniconda/conda-meta/pinned
